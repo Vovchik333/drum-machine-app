@@ -1,0 +1,30 @@
+@use '../../assets/css/variables' as vars;
+
+.checkbox {
+    width: 50px;
+    height: 25px;
+    background-color: vars.$main-color;
+    border-radius: 15px;
+    padding: 0 2px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__toggle {
+    display: none;
+}
+
+.checkbox__ball {
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    transition: margin-left 0.25s linear, background-color 0.25s linear;
+}
+
+.checkbox__toggle:checked + .checkbox__ball {
+    margin-left: 26px;
+    background-color: vars.$accent-color;
+}

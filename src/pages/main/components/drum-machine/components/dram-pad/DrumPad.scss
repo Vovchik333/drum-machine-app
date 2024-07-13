@@ -1,0 +1,11 @@
+@use '../../../../../../assets/css/variables.scss' as vars;
+
+.drum-pad {
+    background-color: vars.$main-color;
+}
+
+.drum-pad_clicked:active,
+.active {
+    background-color: vars.$accent-color;
+    color: vars.$main-color;
+}

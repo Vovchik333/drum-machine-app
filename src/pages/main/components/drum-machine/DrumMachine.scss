@@ -1,0 +1,69 @@
+@use '../../../../assets/css/variables' as vars;
+
+.drum-machine {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: vars.$secondary-color;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.drum-machine__pads {
+    list-style: none;
+    min-height: 250px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.drum-machine__control-panel {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 50%;
+    min-width: 200px;
+}
+
+.drum-machine__display {
+    width: 100%;
+    height: 100px;
+    background-color: vars.$main-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.drum-machine__container-title {
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 650px) {
+    .drum-machine {
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .drum-machine__pads {
+        width: 100%;
+    }
+
+    .drum-machine__control-panel {
+        width: 100%;
+        justify-content: none;
+
+        gap: 20px;
+    }
+}
