@@ -1,1 +1,1 @@
-export { DrumPad } from './dram-pad/DrumPad';
+export { DrumPad } from './drum-pad/DrumPad';
